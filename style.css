@@ -1,0 +1,126 @@
+
+:root {
+    --primary-green: #2e7d32;
+    --hover-green: #1b5e20;
+    --eco-brown: #5d4037;
+    --bg-light: #f1f8e9;
+}
+
+body {
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background-color: var(--bg-light);
+    color: #333;
+    line-height: 1.6;
+}
+
+
+h1, h2, h5 {
+    color: var(--primary-green);
+    font-weight: 700 !important;
+}
+
+hr {
+    border-top: 2px solid var(--primary-green);
+    opacity: 0.2;
+}
+
+
+.nav-link {
+    color: var(--eco-brown);
+    transition: all 0.3s ease-in-out;
+    font-weight: 500;
+}
+
+.nav-link:hover {
+    color: var(--primary-green) !important;
+    transform: translateY(-2px);
+}
+
+.nav-pills .nav-link.active {
+    background-color: var(--primary-green) !important;
+}
+
+.table {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.table-light th {
+    background-color: #dcedc8 !important;
+    color: var(--hover-green);
+}
+
+img {
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+img:hover {
+    transform: scale(1.02);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15) !important;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+    scroll-margin-top: 100px;
+}
+
+@media (max-width: 768px) {
+    header {
+        position: static !important;
+    }
+    
+    .fs-4 {
+        font-size: 1.2rem !important;
+    }
+
+    img {
+        max-height: 300px !important;
+    }
+}
+
+.nav-pills .nav-link {
+    color: var(--primary-green) !important; /* Колір тексту */
+    background: transparent;
+}
+
+.nav-pills .nav-link.active {
+    background-color: var(--primary-green) !important;
+    color: white !important;
+}
+
+.nav-link:hover {
+    background-color: #e8f5e9;
+    color: var(--hover-green) !important;
+}
+
+footer.bg-light {
+    background-color: #f1f8e9 !important;
+    border-top: 3px solid var(--primary-green) !important;
+}
+
+footer h5 {
+    color: var(--primary-green);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+footer .text-muted {
+    color: var(--eco-brown) !important;
+}
+
+.btn-outline-secondary {
+    color: var(--primary-green) !important;
+    border-color: var(--primary-green) !important;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-secondary:hover {
+    background-color: var(--primary-green) !important;
+    color: white !important;
+    border-color: var(--primary-green) !important;
+}
