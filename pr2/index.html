@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Моніторинг Біогазової Установки</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Моніторинг: Біогазова установка</h1>
+            <p>Останнє оновлення: <span id="lastUpdate">--:--:--</span></p>
+        </header>
+
+        <div class="controls">
+            <button id="updateBtn" class="btn btn-primary">Оновити вручну</button>
+            <button id="autoUpdateBtn" class="btn btn-success">Автооновлення</button>
+            <span id="autoStatus">Вимкнено</span>
+        </div>
+
+        <main class="dashboard">
+            <div class="card" id="card0">
+                <h3>Вироблення біогазу</h3>
+                <div class="value"><span id="param0">0</span> <span class="unit">м³/год</span></div>
+                <div id="status0" class="status-indicator">●</div>
+            </div>
+            <div class="card" id="card1">
+                <h3>Вміст метану</h3>
+                <div class="value"><span id="param1">0</span> <span class="unit">%</span></div>
+                <div id="status1" class="status-indicator">●</div>
+            </div>
+            <div class="card" id="card2">
+                <h3>Температура реактора</h3>
+                <div class="value"><span id="param2">0</span> <span class="unit">°C</span></div>
+                <div id="status2" class="status-indicator">●</div>
+            </div>
+            <div class="card" id="card3">
+                <h3>Електрична потужність</h3>
+                <div class="value"><span id="param3">0</span> <span class="unit">кВт</span></div>
+                <div id="status3" class="status-indicator">●</div>
+            </div>
+            
+            <div class="card">
+                <h3>Рівень субстрату</h3>
+                <div class="value"><span id="extra0">0</span> <span class="unit">%</span></div>
+            </div>
+            <div class="card">
+                <h3>pH середовища</h3>
+                <div class="value"><span id="extra1">0</span> <span class="unit">pH</span></div>
+            </div>
+            <div class="card">
+                <h3>Час роботи</h3>
+                <div class="value"><span id="workTime">0</span> <span class="unit">год</span></div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
